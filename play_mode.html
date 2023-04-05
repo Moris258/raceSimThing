@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>RaceSimThing</title>
+
+        <link rel="stylesheet" href="./src/assets/styles/style.css">
+        
+    </head>
+    <body>
+        <canvas id="mainScreen" width="1600" height="1200"></canvas>
+        <canvas id="telemetryCanvas" width="800" height="600"></canvas>
+        
+        <div class="slidecontainer">
+            <input type="range" min="1" max="16" value="1" class="slider" id="gameSpeedSlider">
+        </div>
+
+        <script type="module" src="./src/javascript/main_play.js"></script>
+    </body>
+
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>RaceSimThing</title>
+        <link rel="stylesheet" href="./src/assets/styles/style.css">
+        
+    </head>
+    <body>
+        <canvas id="mainScreen" width="1600" height="1200"></canvas>
+
+        <div id="inputs">
+            <label for="trackName">Track Name: </label>
+            <input type="text" id="trackName" value="NewTrack"></input>
+            <br>
+            <input type="button" id="loadTrackButton" value="Load Track" style="width: 45%"></input>
+            <br>
+            <br>
+            <label for="trackLength">Track Length: </label>
+            <input type="number" id="trackLength" value="4500"></input>
+            <br>
+            <br>
+            <label for="trackTemp">Track Temperature: </label>
+            <input type="number" id="trackTemp" min="1" max="10" value="5"></input>
+            <br>
+            <br>
+            <label for="trackDeg">Track Deg: </label>
+            <input type="number" id="trackDeg" min="1" max="5" value="3"></input>
+            <br>
+            <br>
+            <label for="pitDelta">Pit Delta: </label>
+            <input type="number" id="pitDelta" min="1" value="20"></input>
+            <br>
+            <br>
+            <label for="speedLimit">Speed Limit: </label>
+            <input type="number" id="speedLimit" min="1" value="100"></input>
+            <br>
+            <br>
+            <label for="slipstream">Slipstream: </label>
+            <input type="number" id="slipstream" min="0" value="10"></input>
+            <br>
+            <br>
+            <label for="loadTrace">Trace File: </label>
+            <input type="file" id="loadTrace" style="width: 100%"></input>
+            <br>
+            <br>
+            <label for="splineColor">Spline color </label>
+            <input type="color" id="splineColor"></input>
+            <br>
+            <br>
+        </div>
+
+        <div class="slidecontainer">
+            <input type="range" min="1" max="50" value="5" class="slider" id="gameSpeedSlider">
+        </div>
+
+        <script type="module" src="./src/javascript/main_edit.js"></script>
+    </body>
+
+
+</html>

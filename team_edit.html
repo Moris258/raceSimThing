@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>RaceSimThing</title>
+        
+        <link rel="stylesheet" href="./src/assets/styles/style.css">
+    </head>
+    <body>
+
+        <div style="width: 50%; font-size: 30px;">
+            <br>
+            <input type="button" id="loadTeamButton" value="Load Team" style="width: 20%"></input>
+            <br>
+            <br>
+            <br>
+            <label for="teamName">Team Name: </label>
+            <input type="text" id="teamName" value="NewTeam"></input>
+            <br>
+            <br>
+            <label>Car Type: </label>
+            <br>
+            <input type="radio" id="formula" value="Formula" name="carType" style="width: 3%"></input>
+            <label for="formula">Formula </label>
+            <br>
+            <input type="radio" id="TODO" value="TODO" name="carType" style="width: 3%"></input>
+            <label for="TODO">TODO </label>
+            <br>
+            <input type="radio" id="TODO2" value="TODO" name="carType" style="width: 3%"></input>
+            <label for="TODO2">TODO </label>
+            <br>
+            <br>
+            <br>
+            <div id="carStatsDiv">
+
+
+            </div>
+            <br>
+            <br>
+            <label for="enginePerformance">Engine Power: </label>
+            <input type="number" id="enginePerformance" min="10" max="100" value="80" style="width: 10%"></input>
+            <label for="engineFuelEff">Engine Efficiency: </label>
+            <input type="number" id="engineFuelEff" min="10" max="100" value="80" style="width: 10%"></input>
+            <label for="engineReliability">Engine Reliability: </label>
+            <input type="number" id="engineReliability" min="10" max="100" value="80" style="width: 10%"></input>
+            <br>
+            <br>
+            <label for="teamBraking">Braking Performance: </label>
+            <input type="number" id="teamBraking" min="10" max="100" value="80" style="width: 10%"></input>
+            <label for="teamBrakeReliability">Brake Reliability: </label>
+            <input type="number" id="teamBrakeReliability" min="10" max="100" value="80" style="width: 10%"></input>
+            <br>
+            <br>
+            <label for="teamAcc">Gearbox Performance: </label>
+            <input type="number" id="teamAcc" min="10" max="100" value="80" style="width: 10%"></input>
+            <label for="teamGearboxReliability">Gearbox Reliability: </label>
+            <input type="number" id="teamGearboxReliability" min="10" max="100" value="80" style="width: 10%"></input>
+            <br>
+            <br>
+            <label for="teamDeg">Deg: </label>
+            <input type="number" id="teamDeg" min="10" max="100" value="80" style="width: 10%"></input>
+            <br>
+            <br>
+            <label for="teamColor">Team Color </label>
+            <input type="color" id="teamColor"></input>
+            <br>
+            <br>
+            <label for="teamName">Car Balance: </label>
+            <input type="range" id="carBalance" value="0", min="-10" max="10"></input>
+            <label id="carBalanceValue">0</label>
+            <br>
+            <br>
+            <br>
+            <input type="button" id="saveTeamButton" value="Save Team" style="width: 20%"></input>
+        </div>
+
+        <script type="module" src="./src/javascript/team_edit_main.js"></script>
+
+    </body>
+
+
+</html>
